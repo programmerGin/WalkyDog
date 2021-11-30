@@ -1,0 +1,30 @@
+﻿<Window x:Class="WalkyDog.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WalkyDog"
+        mc:Ignorable="d"
+        Title="SignUp" Height="546.2" Width="463">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="433" Margin="10,74,0,0" VerticalAlignment="Top" Width="425">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="220" Margin="40,21,0,0" VerticalAlignment="Top" Width="375"/>
+        </Grid>
+        <Label Content="당신은 누구입니까?" HorizontalAlignment="Left" Height="25" Margin="95,101,0,0" VerticalAlignment="Top" Width="125"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="220,104,0,0" SelectionChanged="ComboBox_SelectionChanged" TextOptions.TextFormattingMode="Display"/>
+        <Label Content="아이디: " HorizontalAlignment="Left" Height="30" Margin="130,140,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.731,2.18"/>
+        <Label Content="비밀번호: " HorizontalAlignment="Left" Height="30" Margin="120,185,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.731,2.18"/>
+        <Label Content="이 름:" HorizontalAlignment="Left" Height="30" Margin="140,230,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
+        <Label Content="사 진:" HorizontalAlignment="Left" Height="30" Margin="140,274,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
+        <Label Content="소개:" HorizontalAlignment="Left" Height="28" Margin="45,312,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="220,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="220,189,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="220,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="167" Margin="45,340,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="380"/>
+        <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontFamily="Bernard MT Condensed" FontSize="48" Height="64" Width="220"/>
+        <Button Content="Button" VerticalAlignment="Top" Margin="340,278,41.8,0"/>
+        <Image Source="Resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="220,0,0,0" VerticalAlignment="Top" Width="72"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="220,278,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
