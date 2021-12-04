@@ -10,14 +10,15 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WalkyDog
+namespace WalkyDog.Views
 {
     /// <summary>
     /// Interaction logic for Matching.xaml
     /// </summary>
-    public partial class Matching : Window
+    public partial class Matching : Page
     {
         public Matching()
         {
