@@ -16,7 +16,7 @@ namespace WalkyDog
             App.connection = new MySqlConnection(connectionPath);
         }*/
 
-        MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=walkydog;UID=root;PASSWORD=201933043");
+        MySqlConnection conn = new MySqlConnection("SERVER=localhost;DATABASE=test;UID=root;PASSWORD=201933043");
         MySqlDataAdapter adpt;
         MySqlCommand cmd;
 

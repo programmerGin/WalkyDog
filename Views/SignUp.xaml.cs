@@ -10,18 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WalkyDog
+namespace WalkyDog.Views
 {
     /// <summary>
-    /// Interaction logic for Dm.xaml
+    /// Interaction logic for SignUp.xaml
     /// </summary>
-    public partial class Dm : Window
+    public partial class SignUp : Page
     {
-        public Dm()
+        public SignUp()
         {
             InitializeComponent();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

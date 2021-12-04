@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WalkyDog
+namespace WalkyDog.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Dm.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Dm : Page
     {
-        public MainWindow()
+        public Dm()
         {
             InitializeComponent();
         }

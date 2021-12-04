@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.ComponentModel;
 
 namespace WalkyDog.Models
 {
     public class User : Notifier
     {
+      
+
+
         public User(String userName)
         {
             Name = userName;
@@ -24,10 +28,34 @@ namespace WalkyDog.Models
             }
             set
             {
-                Name = value;
+                _Name = value;
                 OnPropertyChanged("Name");
             }
         }
+
+        public User(int ruDog)
+        {
+            RuDog = ruDog;
+        }
+
+        private int _RuDog;
+
+        public int RuDog
+        {
+            get
+            {
+                return _RuDog;
+            }
+            set
+            {
+                _RuDog = value;
+                OnPropertyChanged("RuDog");
+            }
+        }
+
+
+
+
 
     }
 }
