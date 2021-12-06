@@ -27,6 +27,12 @@ namespace WalkyDog.Views
            // DataContext = new UserViewModel();
         }
 
-      
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("회원가입 완료");
+            NavigationService.Navigate(
+             new Uri("Views/Login.xaml", UriKind.Relative)
+             );
+        }
     }
 }
