@@ -3,16 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WalkyDog"
+      xmlns:local="clr-namespace:WalkyDog.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="560" d:DesignWidth="500"
       Title="Login" >
+    <Page.DataContext>
+        <local:UserViewModel/>
+    </Page.DataContext>
     <Grid>
         <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,185,0,0" RenderTransformOrigin="-0.562,3.719" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,68,0,0" FontFamily="Bernard MT Condensed" FontSize="48"/>
         <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,234,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="140,190,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="140,239,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
+        <TextBlock Text="{Binding User.Id}" HorizontalAlignment="Left" Height="26" Margin="140,190,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
+        <TextBlock Text="{Binding User.Pw}" HorizontalAlignment="Left" Height="26" Margin="140,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
         <Image Source="/resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="335,58,0,0" VerticalAlignment="Top" Width="72"/>
         <Button Content="Login" HorizontalAlignment="Left" Height="35" Margin="140,300,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click_1"/>
         <Button Content="Sign up Now"  HorizontalAlignment="Left" Height="35" Margin="260,300,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.374,1.006" Click="Button_Click"/>
