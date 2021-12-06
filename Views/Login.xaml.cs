@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WalkyDog.ViewModels;
+
 namespace WalkyDog.Views
 {
     /// <summary>
@@ -23,6 +24,7 @@ namespace WalkyDog.Views
         public Login()
         {
             InitializeComponent();
+            DataContext = new UserViewModel();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) // login => Matching page 

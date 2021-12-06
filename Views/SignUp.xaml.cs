@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WalkyDog.ViewModels;
 
 namespace WalkyDog.Views
 {
@@ -23,11 +24,9 @@ namespace WalkyDog.Views
         public SignUp()
         {
             InitializeComponent();
+           // DataContext = new UserViewModel();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+      
     }
 }

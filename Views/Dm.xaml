@@ -10,7 +10,7 @@
 
     <Grid>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,20,0,0" FontFamily="Bernard MT Condensed" FontSize="48" Height="65" Width="213"/>
-        <Image Source="Resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="225,10,0,0" VerticalAlignment="Top" Width="72"/>
+        <Image Source="/Resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="225,10,0,0" VerticalAlignment="Top" Width="72"/>
 
     </Grid>
 </Page>
