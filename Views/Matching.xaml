@@ -9,11 +9,17 @@
       Title="Matching">
 
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="502" Margin="10,5,0,0" VerticalAlignment="Top" Width="437"/>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,310,0,0" TextWrapping="Wrap" Text="유저이름" VerticalAlignment="Top" Width="85"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="265" Margin="50,25,0,0" VerticalAlignment="Top" Width="355"/>
-        <Image HorizontalAlignment="Left" Height="210" Margin="70,50,0,0" VerticalAlignment="Top" Width="305"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="50,340,0,0" VerticalAlignment="Top" Width="355"/>
+        <DataGrid HorizontalAlignment="Left" Height="502" Margin="30,30,0,0" VerticalAlignment="Top" Width="437"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="70,335,0,0" TextWrapping="Wrap" Text="이름: 김코코 " VerticalAlignment="Top" Width="85"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="225" Margin="70,90,0,0" VerticalAlignment="Top" Width="355">
+
+        </Border>
+        <Image Source="/resources/coco.jpg" HorizontalAlignment="Left" Height="225" Margin="155,90,0,0" VerticalAlignment="Top" Width="285"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="70,365,0,0" VerticalAlignment="Top" Width="355">
+            <TextBox HorizontalAlignment="Left" Height="130" Margin="9.2,9.2,0,0" TextWrapping="Wrap" Text="1주일에 3번 1시간씩 코코의 산책 도우미가 되어 주실 분 구합니다. 코코의 물통, 배변봉지, 간식 그리고 도우미님의 간식 챙겨드립니다. 소형견이지만 살이쪄서 몸무게 4.5kg 정도 나가고 뚱뚱해도 잘 달립니다. 낯가림 없고 사람 좋아하고 착합니다." VerticalAlignment="Top" Width="335"/>
+
+        </Border>
 
     </Grid>
 </Page>

@@ -69,6 +69,13 @@ namespace WalkyDog.ViewModels
         }
 
 
+
+
+
+
+
+
+
         //회원가입
         public void SaveChanges()
         {
