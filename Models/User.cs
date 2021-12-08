@@ -123,7 +123,7 @@ namespace WalkyDog.Models
             Pw = pw;
         }
 
-
+       
 
         // 회원가입 ( 사진 없이 )  
         public User(string rudog, string id, string pw, string username, string bio)
@@ -135,6 +135,15 @@ namespace WalkyDog.Models
             Bio = bio;
         }
 
+        public User(string rudog, string id, string pw, string username, string img, string bio)
+        {
+            RuDog = rudog;
+            Id = id;
+            Pw = pw;
+            Name = username;
+            Image = img;
+            Bio = bio;
+        }
 
         //강아지인지 사람인지 구분 
         public User(string v)
@@ -142,10 +151,15 @@ namespace WalkyDog.Models
             RuDog = v;
         }
 
-        public User()
-        {
+       
 
+        public User(User _User)
+        {
+           
         }
 
+        public User()
+        {
+        }
     }
 }

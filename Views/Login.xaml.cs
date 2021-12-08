@@ -24,20 +24,26 @@ namespace WalkyDog.Views
         public Login()
         {
             InitializeComponent();
-            DataContext = new UserViewModel();
+            //DataContext = new LoginViewModel();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e) // login => Matching page 
-        {
-            NavigationService.Navigate(
-                new Uri("Views/Matching.xaml", UriKind.Relative)
-                );
-        }
+      
 
         private void Button_Click(object sender, RoutedEventArgs e) // Sign Up 
         {
             NavigationService.Navigate(
                new Uri("Views/SignUp.xaml", UriKind.Relative)
+               );
+        }
+        public bool IsDefault { get; set; }
+      
+
+private void Loginbtn(object sender, RoutedEventArgs e)
+        {
+            
+
+          NavigationService.Navigate(
+               new Uri("Views/Matching.xaml", UriKind.Relative)
                );
         }
     }
