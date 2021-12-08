@@ -3,17 +3,24 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WalkyDog"
+      xmlns:local="clr-namespace:WalkyDog.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="560" d:DesignWidth="500"
       Title="Matching">
+    <Page.DataContext>
+        <local:MatchingViewModel/>
 
+    </Page.DataContext>
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="502" Margin="10,5,0,0" VerticalAlignment="Top" Width="437"/>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,310,0,0" TextWrapping="Wrap" Text="유저이름" VerticalAlignment="Top" Width="85"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="265" Margin="50,25,0,0" VerticalAlignment="Top" Width="355"/>
-        <Image HorizontalAlignment="Left" Height="210" Margin="70,50,0,0" VerticalAlignment="Top" Width="305"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="50,340,0,0" VerticalAlignment="Top" Width="355"/>
+        <DataGrid HorizontalAlignment="Left" Height="502" Margin="10,5,0,0" VerticalAlignment="Top" Width="437" SelectionChanged="DataGrid_SelectionChanged" Background="#FFFFA659" BorderBrush="White"/>
+        <TextBox Text=" 김두부 " Margin="10,310,450,230"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,310,0,0" TextWrapping="Wrap" Text="{Binding User.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontFamily="Bernard MT Condensed" FontSize="30" Height="64" Width="220"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="250" Margin="105,55,0,0" VerticalAlignment="Top" Width="250"/>
+        <Image Source="../Resources/김두부.jpg" HorizontalAlignment="Left" Height="210" Margin="125,74,0,0" VerticalAlignment="Top" Width="215"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="50,340,0,0" VerticalAlignment="Top" Width="355">
+            <TextBox HorizontalAlignment="Left" Height="130" Margin="9.2,9.2,0,0" TextWrapping="Wrap" Text="일주일에 3번 산책 도우미 구하고 있습니다! 낯가림 없이 사람 잘 따릅니다 :)  " VerticalAlignment="Top" Width="335"/>
+        </Border>
 
     </Grid>
 </Page>

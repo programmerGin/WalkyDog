@@ -1,20 +1,9 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-
+using System.Data;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-
 using WalkyDog.Commands;
 using WalkyDog.Models;
 
@@ -27,15 +16,33 @@ namespace WalkyDog.ViewModels
         //새 인스턴스 초기화 
         public UserViewModel()
         {
+            //기본생성자
             _User = new User();
+            //회원가입문
             UpdateCommand = new UserUpdateCommand(this);
+            //회원가입중 어떤 회원으로 등록할것인지
             Whoiam = new User[]
             {
                 new User("반려견"),
-                new User("산책 도우미")
+                new User("산책도우미")
             };
+    
+           
+        }
+
+        public INavigation Navigation { get; set; }
+
+        public UserViewModel(INavigation navigation)
+        {
+        /*    Title = "Matching ";
+            Navigation = navigation;
+            LoginClickCommand = new UserLoginCommand(() => ExecuteLoginClickCommand());*/
 
         }
+
+       
+
+
 
         // 업뎃 가능한 상태인지 나타내는거 
         public bool CanUpdate
@@ -50,6 +57,7 @@ namespace WalkyDog.ViewModels
             }
 
         }
+
 
         private User _User;
 
@@ -69,6 +77,9 @@ namespace WalkyDog.ViewModels
         }
 
 
+       
+
+
         //회원가입
         public void SaveChanges()
         {
@@ -80,7 +91,7 @@ namespace WalkyDog.ViewModels
             {
                 conn.Open();
                  MySqlCommand msc = new MySqlCommand("INSERT INTO user(rudog,id,pw,name,bio) values('" + User.RuDog + "','" + User.Id + "','" + User.Pw + "','" + User.Name + "','" + User.Bio + "');", conn);
-               // MySqlCommand msc = new MySqlCommand("INSERT INTO user(rudog,id,pw,name,bio) values('a','b','c','f','f');", conn);
+               // MySqlCommand msc = new MySqlCommand("INSERT INTO user(rudog,id,pw,name,bio) values('a','b','c','f','f');", conn); 잘들어가는것 확인
                 msc.ExecuteNonQuery();
             }
 
@@ -88,7 +99,7 @@ namespace WalkyDog.ViewModels
 
 
 
-
+        // 시작: 회원가입할떄 당신 강아지인지 사람인지 설정 
         private IEnumerable<User> _whoiam;
         public IEnumerable<User> Whoiam
         {
@@ -100,6 +111,9 @@ namespace WalkyDog.ViewModels
                 OnPropertyChanged("Whoiam");
             }
         }
+
+       
+
 
         private User _selectwho;
         public User Selectedwho
@@ -116,6 +130,8 @@ namespace WalkyDog.ViewModels
             }
         }
 
+        public bool CanLogin { get; internal set; }
+
         private void OnselectedChanged()
         {
             decidedwho();
@@ -127,5 +143,6 @@ namespace WalkyDog.ViewModels
                 return;
             User.RuDog = Selectedwho.RuDog;
         }
+        //끝: 강아지 or 사람 설정 
     }
 }

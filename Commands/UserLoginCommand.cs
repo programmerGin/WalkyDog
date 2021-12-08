@@ -9,18 +9,18 @@ using WalkyDog.ViewModels;
 
 namespace WalkyDog.Commands
 {
-    internal class UserUpdateCommand : ICommand
+    internal class UserLoginCommand : ICommand
     {
-        public UserUpdateCommand(UserViewModel viewModel)
+        public UserLoginCommand(LoginViewModel viewModel)
         {
             _ViewModel = viewModel;
         }
 
-        public UserUpdateCommand()
+        public UserLoginCommand()
         {
         }
 
-        private UserViewModel _ViewModel;
+        private LoginViewModel _ViewModel;
 
         public event System.EventHandler CanExecuteChanged
         {
@@ -32,12 +32,17 @@ namespace WalkyDog.Commands
 
         public bool CanExecute(object parameter)
         {
-            return _ViewModel.CanUpdate;
+            return _ViewModel.CanLogin;
         }
 
         public void Execute(object parameter)
         {
-            _ViewModel.SaveChanges();
+            _ViewModel.FindUser();
+        }
+
+        public static implicit operator UserLoginCommand(RelayCommand v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
