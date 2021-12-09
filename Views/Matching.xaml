@@ -12,7 +12,7 @@
 
     </Page.DataContext>
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="502" Margin="10,5,0,0" VerticalAlignment="Top" Width="437" SelectionChanged="DataGrid_SelectionChanged" Background="#FFFFA659" BorderBrush="White"/>
+        
         <TextBox Text=" 김두부 " Margin="10,310,450,230"/>
         <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,310,0,0" TextWrapping="Wrap" Text="{Binding User.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="85"/>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontFamily="Bernard MT Condensed" FontSize="30" Height="64" Width="220"/>
