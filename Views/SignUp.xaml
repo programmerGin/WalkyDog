@@ -20,7 +20,7 @@
         <ComboBox  ItemsSource="{Binding Whoiam}" 
                    SelectedItem="{Binding Selectedwho}"
             HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="185,102,0,0" 
-                    TextOptions.TextFormattingMode="Display" >
+                    TextOptions.TextFormattingMode="Display" Background="#FFF9E4B0" BorderBrush="#FFF9E4B0" Foreground="Black" >
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding RuDog}"/>
@@ -33,14 +33,14 @@
         <Label Content="이 름:" HorizontalAlignment="Left" Height="30" Margin="105,228,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
         <Label Content="사 진:" HorizontalAlignment="Left" Height="30" Margin="105,272,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
         <Label Content="소개:" HorizontalAlignment="Left" Height="28" Margin="33,312,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.731,2.18"/>
-        <TextBox Text="{Binding User.Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,142,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100"/>
-        <TextBox Text="{Binding User.Pw, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,187,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100"/>
-        <TextBox Text="{Binding User.Name, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100"/>
+        <TextBox Text="{Binding User.Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,142,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Background="#FFF9E4B0"/>
+        <TextBox Text="{Binding User.Pw, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,187,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Foreground="#FFF9E4B0" Background="#FFF9E4B0"/>
+        <TextBox Text="{Binding User.Name, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20" Margin="185,231,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Foreground="#FFF9E4B0" Background="#FFF9E4B0"/>
         <TextBox Text="{Binding User.Bio, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="145" Margin="33,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="425"/>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontFamily="Bernard MT Condensed" FontSize="48" Height="64" Width="220"/>
-        <Button Content="Button" VerticalAlignment="Top" Margin="305,276,77,0"/>
+        <Button Content="Button" VerticalAlignment="Top" Margin="305,276,77,0" Background="#FFF9E4B0"/>
         <Image Source="../Resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="220,0,0,0" VerticalAlignment="Top" Width="72"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="185,276,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="185,276,0,0" TextWrapping="Wrap" Text="photos" VerticalAlignment="Top" Width="100" Background="#FFF9E4B0"/>
         <ScrollBar HorizontalAlignment="Left" Height="145" Margin="440,340,0,0" VerticalAlignment="Top" Width="5"/>
         <Button Command="{Binding UpdateCommand}" Content="회원등록" HorizontalAlignment="Left" Height="30" Margin="33,500,0,0" VerticalAlignment="Top" Width="424" Click="Button_Click" />
 
