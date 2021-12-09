@@ -17,12 +17,12 @@
         <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,185,0,0" RenderTransformOrigin="-0.562,3.719" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,68,0,0" FontFamily="Bernard MT Condensed" FontSize="48"/>
         <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,234,0,0"/>
-        <TextBox Text="{Binding User.Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="26" Margin="140,190,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
-        <TextBox Text="{Binding User.Pw, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="26" Margin="140,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" Background="#FFFDD492"/>
+        <TextBox Text="{Binding User.Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="26" Margin="140,190,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" SelectionBrush="White" Background="#FFF9E4B0" BorderBrush="Black"/>
+        <TextBox Text="{Binding User.Pw, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="26" Margin="140,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" Background="#FFF9E4B0" SelectionBrush="White" BorderBrush="Black"/>
         <Image Source="/resources/walkyDog.png" HorizontalAlignment="Left" Height="97" Margin="335,58,0,0" VerticalAlignment="Top" Width="72"/>
-        <Button CommandParameter="로그인되었습니다." Content="{Binding LoginButtonContent}" Command="{Binding LoginCommand}" IsDefault="True"  HorizontalAlignment="Left" Height="35" Margin="140,300,0,0" VerticalAlignment="Top" Width="80" Click="Loginbtn"/>
-        <Button Content="Sign up Now"  HorizontalAlignment="Left" Height="35" Margin="260,300,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.374,1.006" Click="Button_Click"/>
+        <Button CommandParameter="로그인되었습니다." Content="{Binding LoginButtonContent}" Command="{Binding LoginCommand}" IsDefault="True"  HorizontalAlignment="Left" Height="35" Margin="140,300,0,0" VerticalAlignment="Top" Width="80" Click="Loginbtn" BorderBrush="Black" Background="#FFF9E4B0" Cursor="Hand"/>
+        <Button Content="Sign up Now"  HorizontalAlignment="Left" Height="35" Margin="260,300,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.374,1.006" Click="Button_Click" Background="#FFF9E4B0" BorderBrush="Black" Cursor="Hand"/>
         <Grid HorizontalAlignment="Left" Height="100" Margin="-90,30,0,0" VerticalAlignment="Top" Width="100"/>
-       
+
     </Grid>
 </Page>
