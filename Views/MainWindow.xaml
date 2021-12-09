@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="560" Width="500">
     <Grid>
-        <Frame Source="/Views/Login.xaml" Background="#FFF7B568" Foreground="#FFF97D37"/>
+        <Frame Source="/Views/Login.xaml" Foreground="#FFF97D37" Background="#FFFFBD7C"/>
 
     </Grid>
     <!--
