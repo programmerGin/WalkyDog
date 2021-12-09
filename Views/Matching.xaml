@@ -11,7 +11,7 @@
         <local:MatchingViewModel/>
 
     </Page.DataContext>
-    <Grid>
+    <Grid> 
         
         <TextBox Text=" 김두부 " Margin="10,310,450,230"/>
         <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,310,0,0" TextWrapping="Wrap" Text="{Binding User.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="85"/>
