@@ -16,11 +16,17 @@ namespace WalkyDog.Commands
             _ViewModel = viewModel;
         }
 
-        public UserLoginCommand()
+        public UserLoginCommand(object executeLoginClickCommand)
         {
         }
 
+        public UserLoginCommand(Action p)
+        {
+            this.p = p;
+        }
+
         private LoginViewModel _ViewModel;
+        private Action p;
 
         public event System.EventHandler CanExecuteChanged
         {
