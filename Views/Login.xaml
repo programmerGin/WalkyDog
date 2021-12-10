@@ -10,9 +10,7 @@
       d:DesignHeight="560" d:DesignWidth="500"
       Title="Login" 
       >
-    <Page.DataContext>
-        <local:LoginViewModel/>
-    </Page.DataContext>
+   
     <Grid>
         <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,185,0,0" RenderTransformOrigin="-0.562,3.719" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
         <Label Content="Walky Dog" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="122,68,0,0" FontFamily="Bernard MT Condensed" FontSize="48"/>

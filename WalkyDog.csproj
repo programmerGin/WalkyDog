@@ -191,6 +191,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class\DBMySql.cs" />
+    <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\UserLoginCommand.cs" />
     <Compile Include="Commands\UserUpdateCommand.cs" />
     <Compile Include="ViewModels\DialogCloser.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace WalkyDog.Views
         public Login()
         {
             InitializeComponent();
-            //DataContext = new LoginViewModel();
+            DataContext = new LoginViewModel(this);
         }
 
       
@@ -42,9 +43,6 @@ private void Loginbtn(object sender, RoutedEventArgs e)
         {
             
 
-          NavigationService.Navigate(
-               new Uri("Views/Matching.xaml", UriKind.Relative)
-               );
         }
     }
 }
