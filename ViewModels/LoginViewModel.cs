@@ -36,7 +36,7 @@ namespace WalkyDog.ViewModels
 
         public bool _canexecute(object parameter)
         {
-            return true; //화면안켜지는 오류 이거 리턴 트루 안해줘서였음 
+            return true; 
         }
 
         Page page1;

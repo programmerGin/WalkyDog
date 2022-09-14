@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WalkyDog"
         mc:Ignorable="d"
-        Title="MainWindow" Height="560" Width="500">
+        Title="www.WalkyDog.com" Height="630" Width="500">
     <Grid>
         <Frame Source="/Views/Login.xaml" Foreground="#FFF97D37" Background="#FFFFBD7C"/>
 
